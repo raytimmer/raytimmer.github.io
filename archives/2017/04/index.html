@@ -4,7 +4,7 @@
 
     <!--[if lt IE 9]>
         <style>body {display: none; background: none !important} </style>
-        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+        <meta http-equiv="Refresh" Content="0; url=http://browsehappy.com/" />
     <![endif]-->
 
 <meta charset="utf-8">
@@ -170,7 +170,7 @@
                             
                                 <a class="fa GitHub" href="#" title="GitHub"></a>
                             
-                                <a class="fa QQ" href="/823070186" title="QQ"></a>
+                                <a class="fa QQ" href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=823070186" title="QQ"></a>
                             
                         </ul>
                     </nav>
@@ -248,7 +248,7 @@
                             
                                 <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
                             
-                                <a class="fa QQ" target="_blank" href="/823070186" title="QQ"></a>
+                                <a class="fa QQ" target="_blank" href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=823070186" title="QQ"></a>
                             
                         </ul>
             </nav>
@@ -268,6 +268,39 @@
           <a href="/archives/2017" class="archive-year">2017</a>
         </div>
         <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+          <div class="article-meta">
+              <a href="/2017/04/11/每天十个前端知识点（二）/" class="archive-article-date">
+      <time datetime="2017-04-11T07:45:46.000Z" itemprop="datePublished">04-11</time>
+</a>
+
+
+        </div>
+         
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/04/11/每天十个前端知识点（二）/">每天十个前端知识点（二）</a>
+    </h1>
+  
+
+        <div class="article-info info-on-archive">
+          
+
+          
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+    </div>
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+  
+    
     
     <article class="archive-article archive-type-post">
   <div class="archive-article-inner">
@@ -400,22 +433,8 @@
 <script>
     // Open in New Window
     
-        var oOpenInNew = {
-            
-            
-            
-            
-            
-            
-             archives: ".archive-article-title", 
-             miniArchives: "a.post-list-link", 
-            
-             friends: "#js-friends a", 
-             socail: ".social a" 
-        }
-        for (var x in oOpenInNew) {
-            $(oOpenInNew[x]).attr("target", "_blank");
-        }
+        $("a").attr("target", "_blank");
+        $("#scroll a, #toc a").removeAttr("target");
     
 </script>
 

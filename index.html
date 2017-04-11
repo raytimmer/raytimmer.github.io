@@ -4,7 +4,7 @@
 
     <!--[if lt IE 9]>
         <style>body {display: none; background: none !important} </style>
-        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+        <meta http-equiv="Refresh" Content="0; url=http://browsehappy.com/" />
     <![endif]-->
 
 <meta charset="utf-8">
@@ -175,7 +175,7 @@
                             
                                 <a class="fa GitHub" href="#" title="GitHub"></a>
                             
-                                <a class="fa QQ" href="/823070186" title="QQ"></a>
+                                <a class="fa QQ" href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=823070186" title="QQ"></a>
                             
                         </ul>
                     </nav>
@@ -253,7 +253,7 @@
                             
                                 <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
                             
-                                <a class="fa QQ" target="_blank" href="/823070186" title="QQ"></a>
+                                <a class="fa QQ" target="_blank" href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=823070186" title="QQ"></a>
                             
                         </ul>
             </nav>
@@ -262,6 +262,70 @@
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-每天十个前端知识点（二）" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/04/11/每天十个前端知识点（二）/" class="article-date">
+      <time datetime="2017-04-11T07:45:46.000Z" itemprop="datePublished">2017-04-11</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/04/11/每天十个前端知识点（二）/">每天十个前端知识点（二）</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p>昨天都是说的html和css，那么今天我们来聊一聊javascript的一些知识吧~<br>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2017/04/11/每天十个前端知识点（二）/#more">阅读全文 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-每天十个前端知识点（一）" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -453,22 +517,8 @@
 <script>
     // Open in New Window
     
-        var oOpenInNew = {
-            
-            
-            
-            
-            
-            
-             archives: ".archive-article-title", 
-             miniArchives: "a.post-list-link", 
-            
-             friends: "#js-friends a", 
-             socail: ".social a" 
-        }
-        for (var x in oOpenInNew) {
-            $(oOpenInNew[x]).attr("target", "_blank");
-        }
+        $("a").attr("target", "_blank");
+        $("#scroll a, #toc a").removeAttr("target");
     
 </script>
 

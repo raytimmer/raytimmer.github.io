@@ -4,7 +4,7 @@
 
     <!--[if lt IE 9]>
         <style>body {display: none; background: none !important} </style>
-        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+        <meta http-equiv="Refresh" Content="0; url=http://browsehappy.com/" />
     <![endif]-->
 
 <meta charset="utf-8">
@@ -175,7 +175,7 @@
                             
                                 <a class="fa GitHub" href="#" title="GitHub"></a>
                             
-                                <a class="fa QQ" href="/823070186" title="QQ"></a>
+                                <a class="fa QQ" href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=823070186" title="QQ"></a>
                             
                         </ul>
                     </nav>
@@ -253,7 +253,7 @@
                             
                                 <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
                             
-                                <a class="fa QQ" target="_blank" href="/823070186" title="QQ"></a>
+                                <a class="fa QQ" target="_blank" href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=823070186" title="QQ"></a>
                             
                         </ul>
             </nav>
@@ -421,6 +421,12 @@
             </div>
         
         
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2017/04/11/每天十个前端知识点（二）/">
+                    每天十个前端知识点（二）
+                </a>
+            </div>
+        
     </nav>
 
   
@@ -493,11 +499,13 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2017/04/11/每天十个前端知识点（二）/" title="下一篇: 每天十个前端知识点（二）">
+                <i class="fa fa-angle-right"></i>
+            </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/04/10/每天十个前端知识点（一）/">每天十个前端知识点（一）</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/10/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/04/11/每天十个前端知识点（二）/">每天十个前端知识点（二）</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/10/每天十个前端知识点（一）/">每天十个前端知识点（一）</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/10/hello-world/">Hello World</a></li></ul>
 
 
 
@@ -570,22 +578,8 @@
 <script>
     // Open in New Window
     
-        var oOpenInNew = {
-            
-            
-            
-            
-            
-            
-             archives: ".archive-article-title", 
-             miniArchives: "a.post-list-link", 
-            
-             friends: "#js-friends a", 
-             socail: ".social a" 
-        }
-        for (var x in oOpenInNew) {
-            $(oOpenInNew[x]).attr("target", "_blank");
-        }
+        $("a").attr("target", "_blank");
+        $("#scroll a, #toc a").removeAttr("target");
     
 </script>
 
