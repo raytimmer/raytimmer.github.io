@@ -15,13 +15,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://raytimmer.github.io/tags/index.html">
+<meta name="description" content="今天我们来聊一聊什么是DOM(大部分是官方概念啦,顺便让我自己加深下记忆)">
+<meta name="keywords" content="javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="什么是DOM">
+<meta property="og:url" content="http://raytimmer.github.io/2017/04/12/什么是DOM/index.html">
 <meta property="og:site_name" content="听说名字越长越厉害">
-<meta property="og:updated_time" content="2017-04-10T07:46:14.968Z">
+<meta property="og:description" content="今天我们来聊一聊什么是DOM(大部分是官方概念啦,顺便让我自己加深下记忆)">
+<meta property="og:updated_time" content="2017-04-13T10:05:28.954Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
+<meta name="twitter:title" content="什么是DOM">
+<meta name="twitter:description" content="今天我们来聊一聊什么是DOM(大部分是官方概念啦,顺便让我自己加深下记忆)">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -53,7 +57,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>tags | 听说名字越长越厉害</title>
+<title>什么是DOM | 听说名字越长越厉害</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -63,7 +67,7 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -257,11 +261,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-什么是DOM" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/tags/index.html" class="article-date">
-      <time datetime="2017-04-10T07:46:14.000Z" itemprop="datePublished">2017-04-10</time>
+      <a href="/2017/04/12/什么是DOM/" class="article-date">
+      <time datetime="2017-04-12T04:27:06.000Z" itemprop="datePublished">2017-04-12</time>
 </a>
 
 
@@ -276,7 +280,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      tags
+      什么是DOM
     </h1>
   
 
@@ -286,6 +290,10 @@
         
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -293,86 +301,55 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta { display: none; }
-    #container .article .article-title { padding-right: 0; }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover { border-left: none; }
-    .article-title { font-size: 1.6em }
-    .article-entry hr { margin: 0;}
-    .article-meta,
-    #container .article-info-post.article-info { display: none;}
-    #container .article .article-title { padding: 0; }
-</style>
+        <p>今天我们来聊一聊什么是DOM(大部分是官方概念啦,顺便让我自己加深下记忆)<br><a id="more"></a></p>
+<h1 id="什么是DOM？"><a href="#什么是DOM？" class="headerlink" title="什么是DOM？"></a>什么是DOM？</h1><p>文档对象模型 (DOM) 是HTML和XML文档的编程接口。它提供了对文档的结构化的表述，并定义了一种方式可以使从程序中对该结构进行访问，从而改变文档的结构，样式和内容。DOM 将文档解析为一个由节点和对象（包含属性和方法的对象）组成的结构集合。简言之，它会将web页面和脚本或程序语言连接起来。</p>
+<p>例如，<code>getElementsByTagName</code>方法必须要返回所有<code>&lt;P&gt;</code>元素的列表：</p>
+<blockquote>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> paragraphs = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"P"</span>);</div><div class="line"><span class="comment">// paragraphs[0] is the first &lt;p&gt; element</span></div><div class="line"><span class="comment">// paragraphs[1] is the second &lt;p&gt; element, etc.</span></div><div class="line">alert(paragraphs[<span class="number">0</span>].nodeName);</div></pre></td></tr></table></figure>
+</blockquote>
+<p>所有操作和创建web页面的属性，方法和事件都会被组织成对象的形式（例如， document 对象表示文档本身， table 对象实现了特定的 HTMLTableElement DOM 接口来访问HTML 表格等）。本文会介绍基于 Gecko浏览器的 DOM 面向对象引用。</p>
+<h1 id="如何访问DOM"><a href="#如何访问DOM" class="headerlink" title="如何访问DOM"></a>如何访问DOM</h1><p>当您在创建一个脚本时-无论是使用内嵌 <code>&lt;script&gt;</code>元素或者使用在web页面脚本加载的方法— 您都可以使用 document 或 window 元素的API来操作文档本身或获取文档的子类（web页面中的各种元素）</p>
+<blockquote>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;body onload=<span class="string">"window.alert('welcome to my home page!');"</span>&gt;</div></pre></td></tr></table></figure>
+</blockquote>
+<p>除了定义 JavaScript的 <code>&lt;script&gt;</code> 元素外， 当文档被装载（以及当整个DOM可以被有效使用时），JavaScript可以设定一个函数来运行。下面的函数会创建一个新的 H1元素，为元素添加文本，并将H1添加在文档树中。</p>
+<blockquote>
+  <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></div><div class="line">    <span class="comment">// 页面加载完成之后执行该函数</span></div><div class="line">       <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">// 创建对象 </span></div><div class="line">    <span class="comment">// in an otherwise empty HTML page</span></div><div class="line">       heading = <span class="built_in">document</span>.createElement(<span class="string">"h1"</span>);</div><div class="line">       heading_text = <span class="built_in">document</span>.createTextNode(<span class="string">"Big Head!"</span>);</div><div class="line">       heading.appendChild(heading_text);</div><div class="line">       <span class="built_in">document</span>.body.appendChild(heading);</div><div class="line">      &#125;</div><div class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+</blockquote>
+<h1 id="重要的数据类型"><a href="#重要的数据类型" class="headerlink" title="重要的数据类型"></a>重要的数据类型</h1><table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">document</td>
+<td style="text-align:left">当一个成员返回document对象（例如，元素的ownerDocument属性返回它所属于document) ，这个对象就是 document 对象本身。</td>
+</tr>
+<tr>
+<td style="text-align:left">element</td>
+<td style="text-align:left">element 是指由 DOM API 中成员返回的类型为 element 的一个元素或节点。 例如， document.createElement() 方法会返回一个 node 的对象引用，也就是说这个方法返回了在DOM中创建的 element。 element 对象实现了 DOM Element 接口以及更基本的 Node 接口，参考文档将两者都包含在内。</td>
+</tr>
+<tr>
+<td style="text-align:left">nodeList</td>
+<td style="text-align:left">nodeList 是一个元素的数组，如从 document.getElementsByTagName()方法返回的就是这种类型。 nodeList 中的条目由通过下标有两种方式进行访问：list.item(1)，list[1]两种方式是等价的，第一种方式中 item() 是 nodeList 对象中的单独方法。 后面的方式则使用了经典的数组语法来获取列表中的第二个条目。</td>
+</tr>
+<tr>
+<td style="text-align:left">attribute</td>
+<td style="text-align:left">当 attribute 通过成员函数 (例如，通过 createAttribute()方法) 返回时，它是一个为属性暴露出专门接口的对象引用。DOM中的属性也是节点，就像元素一样，只不过您可能会很少使用它。</td>
+</tr>
+<tr>
+<td style="text-align:left">namedNodeMap</td>
+<td style="text-align:left">namedNodeMap 和数组类似，但是条目是由name或index访问的，虽然后一种方式仅仅是为了枚举方便，因为在 list 中本来就没有特定的顺序。 出于这个目的，  namedNodeMap 有一个 item() 方法，你也可以从  namedNodeMap 添加或移除条目。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="下面是在web和XML页面脚本中使用DOM时，一些常用的API简要列表。"><a href="#下面是在web和XML页面脚本中使用DOM时，一些常用的API简要列表。" class="headerlink" title="下面是在web和XML页面脚本中使用DOM时，一些常用的API简要列表。"></a>下面是在web和XML页面脚本中使用DOM时，一些常用的API简要列表。</h2><blockquote>
+<p>document.getElementById(id)<br>element.getElementsByTagName(name)<br>document.createElement(name)<br>parentNode.appendChild(node)<br>element.innerHTML<br>element.style.left<br>element.setAttribute<br>element.getAttribute<br>element.addEventListener<br>window.content<br>window.onload<br>window.dump<br>window.scrollTo</p>
+</blockquote>
 
-
-    <!-- Tag Cloud Page -->
-    <hr>
-<br>
-
-
-<p class="count"></p>
-
-<div class="tags">
-    <a href="/tags/css/" style="font-size: 16px; color: #808080">css</a> <a href="/tags/html/" style="font-size: 16px; color: #808080">html</a> <a href="/tags/javascript/" style="font-size: 35px; color: #000">javascript</a>
-</div>
-<style>
-    .category-list li{
-        display: inline-block;
-        margin: 0 1em .5em 0;
-        padding: 4px;
-        border: 1px solid lightgray;
-        font-size: 1.2rem;
-    }
-    .category-list a { color: gray; }
-    .category-list-item:hover a {
-        color: gray;
-        text-decoration: none;
-    }
-    .category-list-count {
-        margin-left: 2px;
-        font-size: .9rem;
-    }
-    .article-entry ul li:before{ display: none; }
-    .article-inner { text-align: center; }
-    .tags {
-        max-width: 42em;
-        margin: 2em auto;
-        margin-top: 0em;
-    }
-    .tags a {
-        margin-right: 1em;
-        line-height: 65px;
-        border-bottom: 1px solid gray;
-        white-space: nowrap;
-        transition: border-bottom .5s;
-    }
-    .tags a:hover {
-        border-bottom: 3px dotted gray;
-        text-decoration: none;
-    }
-    #count > span {
-        margin: auto .2em;
-        font-weight: bold;
-    }
-</style>
-
-<!-- Count tags and categories -->
-<p id="count">
-        已有<span><script>document.write($(".category-list-item").length)</script></span>个分类，
-        共计<span><script>document.write($(".tags > a").length)</script></span>个标签
-</p>
-<script>
-    $('#count').appendTo('.count');
-</script>
-
-          
-        
       
     </div>
     
@@ -381,8 +358,42 @@
     
 
 
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2017/04/11/每天十个前端知识点（二）/">
+                    每天十个前端知识点（二）
+                </a>
+            </div>
+        
+        
+    </nav>
+
   
 </article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#什么是DOM？"><span class="toc-number">1.</span> <span class="toc-text">什么是DOM？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#如何访问DOM"><span class="toc-number">2.</span> <span class="toc-text">如何访问DOM</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#重要的数据类型"><span class="toc-number">3.</span> <span class="toc-text">重要的数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#下面是在web和XML页面脚本中使用DOM时，一些常用的API简要列表。"><span class="toc-number">3.1.</span> <span class="toc-text">下面是在web和XML页面脚本中使用DOM时，一些常用的API简要列表。</span></a></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
 
 
 
@@ -390,6 +401,24 @@
 
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/04/11/每天十个前端知识点（二）/" title="上一篇: 每天十个前端知识点（二）">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/04/12/什么是DOM/">什么是DOM</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/11/每天十个前端知识点（二）/">每天十个前端知识点（二）</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/10/每天十个前端知识点（一）/">每天十个前端知识点（一）</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/10/hello-world/">Hello World</a></li></ul>
 
 
 
