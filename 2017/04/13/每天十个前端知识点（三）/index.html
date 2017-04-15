@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=http://browsehappy.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="Raytimmer" />
+
+
+
+<meta name="description" content="今天打算来看看HTML5相关的知识点">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="每天十个前端知识点(三)">
+<meta property="og:url" content="http://raytimmer.github.io/2017/04/13/每天十个前端知识点（三）/index.html">
+<meta property="og:site_name" content="听说名字越长越厉害">
+<meta property="og:description" content="今天打算来看看HTML5相关的知识点">
+<meta property="og:updated_time" content="2017-04-15T13:44:10.877Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="每天十个前端知识点(三)">
+<meta name="twitter:description" content="今天打算来看看HTML5相关的知识点">
+
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="听说名字越长越厉害" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>每天十个前端知识点(三) | 听说名字越长越厉害</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: undefined
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">Raytimmer</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">上善若水，人淡如菊</p>
+        
+
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/aboutme.html">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:823070186@qq.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="#" title="GitHub"></a>
+                            
+                                <a class="fa QQ" href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=823070186" title="QQ"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">一名专注于前端的菜鸡程序猿</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Raytimmer</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">Raytimmer</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">上善若水，人淡如菊</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/aboutme.html">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:823070186@qq.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
+                            
+                                <a class="fa QQ" target="_blank" href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=823070186" title="QQ"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap"><article id="post-每天十个前端知识点（三）" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/04/13/每天十个前端知识点（三）/" class="article-date">
+      <time datetime="2017-04-13T12:53:08.000Z" itemprop="datePublished">2017-04-13</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      每天十个前端知识点(三)
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>今天打算来看看HTML5相关的知识点<br><a id="more"></a></p>
+<h1 id="h5新增的元素"><a href="#h5新增的元素" class="headerlink" title="h5新增的元素"></a>h5新增的元素</h1><h2 id="结构元素"><a href="#结构元素" class="headerlink" title="结构元素"></a>结构元素</h2><h3 id="header"><a href="#header" class="headerlink" title="header"></a>header</h3><p>头部标签，可出现多次。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">header</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">nav</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">nav</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">header</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">article</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">header</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">header</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">article</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="footer"><a href="#footer" class="headerlink" title="footer"></a>footer</h3><p>尾部标签，可出现多次，常见应用：脚注(相关链接、版权信息)<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">footer</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span>版权信息<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span>联系我们<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span>加入我们<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">footer</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="hgroup"><a href="#hgroup" class="headerlink" title="hgroup"></a>hgroup</h3><p>将标题及其子标题进行分组<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">article</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">header</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">hgroup</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">h1</span>&gt;</span>主标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">h2</span>&gt;</span>子标题<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">hgroup</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">p</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">time</span> <span class="attr">datetime</span>=<span class="string">"2017-1-1"</span>&gt;</span>2017-1-1<span class="tag">&lt;/<span class="name">time</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">header</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">footer</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">footer</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">article</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="section"><a href="#section" class="headerlink" title="section"></a>section</h3><p>对网站内容进行分块、分段，当容器需要直接定义样式或脚本行为时推荐使用div,而非section<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">(标题+内容)</div><div class="line"><span class="tag">&lt;<span class="name">section</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">section</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="article"><a href="#article" class="headerlink" title="article"></a>article</h3><p>代表独立的区块，是一种特殊的section，强调独立性，可嵌套使用。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">article</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">header</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">header</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">article</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">header</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">header</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">footer</span>&gt;</span><span class="tag">&lt;/<span class="name">footer</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">article</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">footer</span>&gt;</span><span class="tag">&lt;/<span class="name">footer</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">article</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="aside"><a href="#aside" class="headerlink" title="aside"></a>aside</h3><p>用来表示当前页面或文章的附属信息(相关引用、侧边栏、广告、导航条)<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">header</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">header</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">article</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">aside</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">aside</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">article</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">aside</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">nav</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">h2</span>&gt;</span>评论<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">nav</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">aside</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="nav"><a href="#nav" class="headerlink" title="nav"></a>nav</h3><p>常见应用：导航条、侧边栏导航、页内导航、翻页操作。不能用menu元素代替nav元素<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">nav</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">article</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">header</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">nav</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">				<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">				<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">			<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">nav</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">header</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">section</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">section</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">section</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">section</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">footer</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">footer</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">article</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="整体应用"><a href="#整体应用" class="headerlink" title="整体应用"></a>整体应用</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">header</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">h1</span>&gt;</span>xxx<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">nav</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>a1<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>a2<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">nav</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">header</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">article</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">hgroup</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">h1</span>&gt;</span>主标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">h2</span>&gt;</span>子标题<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">hgroup</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>正文<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">section</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">article</span>&gt;</span></div><div class="line">				<span class="tag">&lt;<span class="name">h1</span>&gt;</span>评论标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">				<span class="tag">&lt;<span class="name">p</span>&gt;</span>评论正文<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">			<span class="tag">&lt;/<span class="name">article</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">section</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">article</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">footer</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">small</span>&gt;</span>版权***<span class="tag">&lt;/<span class="name">small</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">footer</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="其他元素"><a href="#其他元素" class="headerlink" title="其他元素"></a>其他元素</h2><h3 id="video"><a href="#video" class="headerlink" title="video"></a>video</h3><p>不同浏览器支持的格式不同，可能需要转码，在source标签里引入多种格式。<br>controls属性显示自带控制进度条。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">"xxx.mp4"</span> <span class="attr">controls</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">hr</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">video</span>  <span class="attr">controls</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"xxx.mp4"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"xxx.ogg"</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">video</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">hr</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">"xxx.mp4"</span> <span class="attr">id</span>=<span class="string">"v1"</span> <span class="attr">width</span>=<span class="string">"400px"</span> <span class="attr">height</span>=<span class="string">"200px"</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"play()"</span>&gt;</span>播放/暂停<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line">    	var v1 = document.getElementById('v1');</div><div class="line">    	function play() &#123;</div><div class="line">    		if(v1.paused) &#123;</div><div class="line">    			v1.play();</div><div class="line">    		&#125; else &#123;</div><div class="line">    			v1.pause();</div><div class="line">    		&#125;</div><div class="line">    	&#125;</div><div class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="audio"><a href="#audio" class="headerlink" title="audio"></a>audio</h3><p>音频标签，controls属性显示自带控制进度条<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">audio</span> <span class="attr">src</span>=<span class="string">"xxx.mp3"</span> <span class="attr">controls</span>&gt;</span><span class="tag">&lt;/<span class="name">audio</span>&gt;</span>  <span class="comment">&lt;!-- 显示音频自带播放器样式 --&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">hr</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">audio</span> <span class="attr">src</span>=<span class="string">"xxx.mp3"</span> <span class="attr">id</span>=<span class="string">"a1"</span>&gt;</span><span class="tag">&lt;/<span class="name">audio</span>&gt;</span>  <span class="comment">&lt;!-- 只显示下面的按钮 --&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"play()"</span>&gt;</span>播放/暂停<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line">    	var a1 = document.getElementById('a1');</div><div class="line">    	function play() &#123;</div><div class="line">    		if(a1.paused) &#123;</div><div class="line">    			a1.play();</div><div class="line">    		&#125; else &#123;</div><div class="line">    			a1.pause();</div><div class="line">    		&#125;</div><div class="line">    	&#125;</div><div class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="canvas"><a href="#canvas" class="headerlink" title="canvas"></a>canvas</h3><p>最大的亮点画布，这个我们下次单开知识点</p>
+<h3 id="input元素类型"><a href="#input元素类型" class="headerlink" title="input元素类型"></a>input元素类型</h3><ul>
+<li>email邮件类型</li>
+<li>url地址链接类型</li>
+<li>number数字类型</li>
+<li>range范围类型</li>
+<li>date日期类型</li>
+<li>time时间类型</li>
+<li>Date Pickers日期选择器</li>
+</ul>
+<h2 id="废除的元素"><a href="#废除的元素" class="headerlink" title="废除的元素"></a>废除的元素</h2><ul>
+<li>能用CSS替代的元素：basefont、big、center、font、s、tt、u等</li>
+<li>frame框架</li>
+<li>只有部分浏览器支持的元素</li>
+</ul>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/04/13/每天十个前端知识点（三）/">每天十个前端知识点(三)</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">Raytimmer</a></p>
+        <p><span>发布时间:</span>2017-04-13, 20:53:08</p>
+        <p><span>最后更新:</span>2017-04-15, 21:44:10</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/04/13/每天十个前端知识点（三）/" title="每天十个前端知识点(三)">http://raytimmer.github.io/2017/04/13/每天十个前端知识点（三）/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://raytimmer.github.io/2017/04/13/每天十个前端知识点（三）/　　作者: Raytimmer" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2017/04/12/什么是DOM/">
+                    什么是DOM
+                </a>
+            </div>
+        
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#h5新增的元素"><span class="toc-number">1.</span> <span class="toc-text">h5新增的元素</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#结构元素"><span class="toc-number">1.1.</span> <span class="toc-text">结构元素</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#header"><span class="toc-number">1.1.1.</span> <span class="toc-text">header</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#footer"><span class="toc-number">1.1.2.</span> <span class="toc-text">footer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hgroup"><span class="toc-number">1.1.3.</span> <span class="toc-text">hgroup</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#section"><span class="toc-number">1.1.4.</span> <span class="toc-text">section</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#article"><span class="toc-number">1.1.5.</span> <span class="toc-text">article</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#aside"><span class="toc-number">1.1.6.</span> <span class="toc-text">aside</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nav"><span class="toc-number">1.1.7.</span> <span class="toc-text">nav</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#整体应用"><span class="toc-number">1.1.8.</span> <span class="toc-text">整体应用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他元素"><span class="toc-number">1.2.</span> <span class="toc-text">其他元素</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#video"><span class="toc-number">1.2.1.</span> <span class="toc-text">video</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#audio"><span class="toc-number">1.2.2.</span> <span class="toc-text">audio</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#canvas"><span class="toc-number">1.2.3.</span> <span class="toc-text">canvas</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#input元素类型"><span class="toc-number">1.2.4.</span> <span class="toc-text">input元素类型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#废除的元素"><span class="toc-number">1.3.</span> <span class="toc-text">废除的元素</span></a></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/04/12/什么是DOM/" title="上一篇: 什么是DOM">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/04/13/每天十个前端知识点（三）/">每天十个前端知识点(三)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/12/什么是DOM/">什么是DOM</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/11/每天十个前端知识点（二）/">每天十个前端知识点（二）</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/10/每天十个前端知识点（一）/">每天十个前端知识点（一）</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/10/hello-world/">Hello World</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2016-2017 Raytimmer
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        $("a").attr("target", "_blank");
+        $("#scroll a, #toc a").removeAttr("target");
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
