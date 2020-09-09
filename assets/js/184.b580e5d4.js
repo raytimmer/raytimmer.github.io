@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[184],{1113:function(t,e,a){"use strict";a.r(e);var n={},s=a(1),i=Object(s.a)(n,(function(){var t=this.$createElement,e=this._self._c||t;return e("div",{staticClass:"demo"},[e("px-pagination",{attrs:{"page-size":20,"pager-count":11,layout:"prev, pager, next",total:1e3}})],1)}),[],!1,null,"24520882",null);e.default=i.exports}}]);

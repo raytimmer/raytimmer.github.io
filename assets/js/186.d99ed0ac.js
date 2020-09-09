@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[186],{1110:function(t,e,a){"use strict";a.r(e);var n={},s=a(1),l=Object(s.a)(n,(function(){var t=this.$createElement,e=this._self._c||t;return e("div",{staticClass:"demo"},[e("px-pagination",{attrs:{small:"",layout:"prev, pager, next",total:50}})],1)}),[],!1,null,"364376fe",null);e.default=l.exports}}]);
