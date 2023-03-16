@@ -1,0 +1,1 @@
+import{n}from"./main-7cbd11f9.js";const t={};var e=n({created(){const{params:n,query:t}=this.$route,{path:e}=n;this.$router.replace({path:"/"+e,query:t})},render:function(n){return n("")}},undefined,undefined,!1,r,null,null,null);function r(n){for(let e in t)this[e]=t[e]}const u=function(){return e.exports}();export{u as default};
